@@ -224,7 +224,7 @@
     - Должна быть реализована пагинация или бесконечная прокрутка
   prerequisites: |
     - Пользователь зарегистрирован на сайте
-    - Выполнен вход в систему с email: registereduser@example.com и паролем: RegisteredPassword123
+    - Выполнен вход в систему
   test-data: |
     Credentials:
       - Email: registereduser@example.com
