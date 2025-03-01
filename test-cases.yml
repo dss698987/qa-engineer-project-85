@@ -1,20 +1,20 @@
 ---
 - summary: |
-      Проверка регистрации нового пользователя с уникальным email и паролем
-    requirement: |
-      Пользователи могут регистрироваться на сайте с использованием уникального email и пароля
-    prerequisites: |
-      Открыта страница регистрации
-    test-data:
-      email: newuser@example.com
-      password: NewPassword123
-    steps:
-      - Вводим email newuser@example.com
-      - Вводим пароль NewPassword123
-      - Подтверждаем пароль NewPassword123
-      - Нажимаем кнопку Зарегистрироваться
-    expected-result: |
-      Пользователь успешно зарегистрирован и перенаправлен на страницу входа или профиля
+    Проверка регистрации нового пользователя с уникальным email и паролем
+  requirement: |
+    Пользователи могут регистрироваться на сайте с использованием уникального email и пароля
+  prerequisites: |
+    Открыта страница регистрации
+  test-data:
+    email: newuser@example.com
+    password: NewPassword123
+  steps:
+    - Вводим email newuser@example.com
+    - Вводим пароль NewPassword123
+    - Подтверждаем пароль NewPassword123
+    - Нажимаем кнопку Зарегистрироваться
+  expected-result: |
+    Пользователь успешно зарегистрирован и перенаправлен на страницу входа или профиля
 
     
 - summary: |
