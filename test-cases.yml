@@ -5,10 +5,9 @@
     Пользователи могут регистрироваться на сайте с использованием уникального email и пароля
   prerequisites: |
     Открыта страница регистрации
-  test-data:
-    Тестовые данные
-    email: newuser@example.com
-    password: NewPassword123
+  test-data: |
+    email = newuser@example.com
+    password = NewPassword123
   steps:
     - Вводим email
     - Вводим пароль
@@ -27,9 +26,8 @@
     На странице присутствуют кнопки "Войти через Git" и "Войти через Discord"
     Сайт настроен для интеграции с Git и Discord
   test-data: |
-    Тестовые данные
-    Username: gituser123
-    Password: GitPassword456
+    Username = gituser123
+    Password = GitPassword456
     Учетная запись с поддержкой OAuth-авторизации
   steps:
     - Нажимаем кнопку "Войти через Git"
@@ -54,14 +52,13 @@
     Открыта главная страница
     На странице доступна кнопка "Create Game"
   test-data: |
-    Тестовые данные
-    Email: registereduser@example.com
-    Password: RegisteredPassword123
-    Game Name: "Название_Игры"
-    Level: Medium
-    Game Mode: Bot
-    Time Control: 10 минут
-    Task: Tomato
+    Email = registereduser@example.com
+    Password = RegisteredPassword123
+    Game Name = Название_Игры
+    Level = Medium
+    Game Mode = Bot
+    Time Control = 10 минут
+    Task = Tomato
   steps:
     - Нажимаем кнопку "Create Game"
     - Вводим название игры: "Название_Игры"
@@ -85,10 +82,9 @@
     Открыта главная страница
     Чат виден на странице
   test-data: |
-    Тестовые данные
-    Email: registereduser@example.com
-    Password: RegisteredPassword123
-    Message: "Привет, это тестовое сообщение!"
+    Email = registereduser@example.com
+    Password = RegisteredPassword123
+    Message = Привет, это тестовое сообщение!
   steps:
     - Вводим сообщение: "Привет, это тестовое сообщение!"
     - Нажимаем кнопку «Отправить»
@@ -110,7 +106,6 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Тестовые данные
     Email = registereduser@example.com
     Password = RegisteredPassword123
     New Name = UpdatedUser
@@ -139,7 +134,6 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Тестовые данные
     Email = registereduser@example.com
     Password = RegisteredPassword123
     New Name = qqqq123
@@ -167,7 +161,6 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Тестовые данные
     Email = registereduser@example.com
     Password = RegisteredPassword123
   steps:
@@ -195,7 +188,6 @@
     У пользователя есть права на создание турниров
     Открыта главная страница
   test-data: |
-    Тестовые данные
     Email = adminuser@example.com
     Пароль = AdminPassword123
     Title = Кубок кодинга
@@ -247,7 +239,6 @@
     Пользователь находится на странице с формой обратной связи
     Форма доступна для взаимодействия
   test-data: |
-    Тестовые данные
     Категория = Улучшения
     Текст сообщения = Предлагаю добавить возможность фильтрации задач по сложности
   steps:
@@ -275,7 +266,6 @@
     Пользователь зарегистрирован на сайте.
     Пользователь выполнен вход в систему.
   test-data:
-    Тестовые данные
     email = registereduser@example.com
     password = RegisteredPassword123
     exercise-title = Проверка статуса
