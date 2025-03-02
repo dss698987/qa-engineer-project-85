@@ -6,12 +6,13 @@
   prerequisites: |
     Открыта страница регистрации
   test-data:
+    Тестовые данные
     email: newuser@example.com
     password: NewPassword123
   steps:
-    - Вводим email newuser@example.com
-    - Вводим пароль NewPassword123
-    - Подтверждаем пароль NewPassword123
+    - Вводим email
+    - Вводим пароль
+    - Подтверждаем пароль
     - Нажимаем кнопку Зарегистрироваться
   expected-result: |
     Пользователь успешно зарегистрирован и перенаправлен на страницу входа или профиля
@@ -26,13 +27,14 @@
     На странице присутствуют кнопки "Войти через Git" и "Войти через Discord"
     Сайт настроен для интеграции с Git и Discord
   test-data: |
+    Тестовые данные
     Username: gituser123
     Password: GitPassword456
     Учетная запись с поддержкой OAuth-авторизации
   steps:
     - Нажимаем кнопку "Войти через Git"
-    - Вводим Username: gituser123
-    - Вводим Password: GitPassword456
+    - Вводим Username
+    - Вводим Password
     - Нажимаем кнопку "Авторизоваться"    
     - Нажимаем кнопку "Войти через Discord"
     - Подтверждаем разрешение доступа к данным аккаунта Discord
@@ -52,6 +54,7 @@
     Открыта главная страница
     На странице доступна кнопка "Create Game"
   test-data: |
+    Тестовые данные
     Email: registereduser@example.com
     Password: RegisteredPassword123
     Game Name: "Название_Игры"
@@ -82,6 +85,7 @@
     Открыта главная страница
     Чат виден на странице
   test-data: |
+    Тестовые данные
     Email: registereduser@example.com
     Password: RegisteredPassword123
     Message: "Привет, это тестовое сообщение!"
@@ -106,9 +110,10 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Email: registereduser@example.com
-    Password: RegisteredPassword123
-    New Name: UpdatedUser
+    Тестовые данные
+    Email = registereduser@example.com
+    Password = RegisteredPassword123
+    New Name = UpdatedUser
   steps:
     - Открываем меню профиля
     - Нажимаем пункт «Мой профиль»
@@ -134,13 +139,14 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Email: registereduser@example.com
-    Password: RegisteredPassword123
-    New Name: qqqq123
+    Тестовые данные
+    Email = registereduser@example.com
+    Password = RegisteredPassword123
+    New Name = qqqq123
   steps:
     - Открываем меню профиля
     - Нажимаем пункт «Настройки»
-    - Вводим новое имя: qqqq123
+    - Вводим новое имя "qqqq123"
     - Включаем уведомления по email
     - Подключаем Discord
     - Нажимаем кнопку «Сохранить изменения»
@@ -161,8 +167,9 @@
     Пользователь зарегистрирован на сайте
     Выполнен вход в систему
   test-data: |
-    Email: registereduser@example.com
-    Password: RegisteredPassword123
+    Тестовые данные
+    Email = registereduser@example.com
+    Password = RegisteredPassword123
   steps:
     - Открываем меню профиля
     - Нажимаем пункт "Рейтинг пользователей"
@@ -188,23 +195,24 @@
     У пользователя есть права на создание турниров
     Открыта главная страница
   test-data: |
-    Email: adminuser@example.com
-    Пароль: AdminPassword123
-    Title: Кубок кодинга
-    Type: Командный
-    Teams: Команда Alpha, Команда Beta
-    Description: Турнир между двумя командами. Задачи средней сложности.
-    Start Time: '2025-03-01T14:00:00Z'
-    Access: По токену
-    Gameplay Mode: Случайный раунд
-    Scoring Method: Выиграл или проиграл
-    Exercise Source: Пул упражнений
-    Difficulty: Средний
-    Number of Players: 64
-    Language: Java
-    Timeout: 600
-    Break Duration: 300
-    Rounds to Win: 3
+    Тестовые данные
+    Email = adminuser@example.com
+    Пароль = AdminPassword123
+    Title = Кубок кодинга
+    Type = Командный
+    Teams = Команда Alpha, Команда Beta
+    Description = Турнир между двумя командами. Задачи средней сложности.
+    Start Time = '2025-03-01T14:00:00Z'
+    Access = По токену
+    Gameplay Mode = Случайный раунд
+    Scoring Method = Выиграл или проиграл
+    Exercise Source = Пул упражнений
+    Difficulty = Средний
+    Number of Players = 64
+    Language = Java
+    Timeout = 600
+    Break Duration = 300
+    Rounds to Win = 3
   steps:
     - Открываем меню профиля
     - Нажимаем пункт «Турниры»
@@ -239,8 +247,9 @@
     Пользователь находится на странице с формой обратной связи
     Форма доступна для взаимодействия
   test-data: |
-    Категория: Улучшения
-    Текст сообщения: Предлагаю добавить возможность фильтрации задач по сложности
+    Тестовые данные
+    Категория = Улучшения
+    Текст сообщения = Предлагаю добавить возможность фильтрации задач по сложности
   steps:
     - Открываем сайт
     - Переходим на страницу с формой обратной связи
@@ -266,14 +275,15 @@
     Пользователь зарегистрирован на сайте.
     Пользователь выполнен вход в систему.
   test-data:
-    email: registereduser@example.com
-    password: RegisteredPassword123
-    exercise-title: "Проверка статуса"
-    difficulty: "Легкая"
-    language: "Java"
-    description: "Напишите метод на Java, который принимает булево значение и возвращает строку 'Активно', если значение true, и 'Неактивно', если false."
-    input-parameters: "Булево значение (boolean)"
-    output-parameters: "Строка (String)"
+    Тестовые данные
+    email = registereduser@example.com
+    password = RegisteredPassword123
+    exercise-title = Проверка статуса
+    difficulty = Легкая
+    language = Java
+    description = Напишите метод на Java, который принимает булево значение и возвращает строку Активно, если значение true, и Неактивно, если false.
+    input-parameters = Булево значение (boolean)
+    output-parameters = Строка (String)
   steps:
     - Открываем сайт и переходим к странице входа
     - Вводим email registereduser@example.com
